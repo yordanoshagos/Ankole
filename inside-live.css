@@ -1,0 +1,285 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    margin-top: -3.1%;
+    font-family: poppins;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    border: 1px solid rgb(49, 42, 42);
+    width: 35%;
+    padding: 1.2% 2.5%;
+    border-radius: 100px;
+    background-color: rgb(49, 42, 42);
+    left: 29%;
+    top: 85%;
+    z-index: 2;
+    gap: 3%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navigation #reservation {
+    border: 1px solid rgb(97, 90, 90);
+    border-radius: 100px;
+    background-color: rgb(97, 90, 90);
+    padding: 2% 3.5%;
+    margin-top: -2%;
+}
+
+.navigation #reservation:hover {
+    color: black;
+    background-color: white;
+}
+
+.clock {
+    position: relative;
+    display: inline-block;
+}
+
+.clock-dropdown {
+    font-family: poppins;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 770%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 22px 26px;
+    border-radius: 15px;
+    top: -990%;
+    left: -33%;
+    z-index: 1;
+
+}
+
+.clock:hover .clock-dropdown {
+    display: block;
+}
+
+.main-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.main-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(17, 14, 14);
+    width: 770%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    top: -1150%;
+    left: -43%;
+    z-index: 1;
+}
+.main-dropdown a{
+    display: block;
+    line-height: 55%;
+    border-bottom: 1px solid gray;
+}
+.main-menu:hover .main-dropdown {
+    display: block;
+}
+
+.hr {
+    color: rgb(97, 90, 90);
+    background-color: rgb(44, 42, 42);
+
+}
+
+/* #pic-opacity{
+    position: absolute;
+    overflow: visible;
+    background: rgb(0, 0, 0);
+    background:  rgba(0, 0, 0, 0.5);
+    width: 99vw;
+    height: 102vh;
+    margin-top: -1%;
+} */
+#fadhilee {
+    width: 198vh;
+    height: 200vh;
+    margin: -0.5%;
+    filter: brightness(0.5);
+}
+
+#ach13ng {
+    width: 198vh;
+    height: 200vh;
+    margin: -0.5%;
+    filter: brightness(0.5);
+}
+
+#koko-kos {
+    width: 198.9vh;
+    margin: -0.5%;
+    height: 200vh;
+    filter: brightness(0.5);
+}
+
+#live {
+    position: relative;
+    z-index: 1;
+    margin-top: -75%;
+    text-align: center;
+    color: white;
+    font-size: 390%;
+}
+
+
+
+@media only screen and (max-width: 430px) {
+    body{
+        background-color: black;
+        font-size: 70%;
+    }
+    
+    #koko-kos{
+        margin-top: 6%;
+        width: 45vh;
+        height: 55vh;
+    }
+    #ach13ng {
+        margin-top: -1%;
+        width: 45vh;
+        height: 55vh;
+       
+    }
+    
+    #fadhilee {
+        margin-top: -1%;
+        width: 45vh;
+        height: 55vh;
+    }
+    #live{
+        font-size: 270%;
+        margin-top: 18%;
+    }
+    .navigation{
+        font-size: 70%;
+        width: 83%;
+        margin-top: 7%;
+        margin-left: -24%;
+    }
+    .navigation #reservation{
+        height: 1%;
+        margin-top: 0.2%;
+    }
+    .navigation a{
+        margin-top: 2.2%;
+    }
+    #ach13ng{
+        margin-top: 3%;
+        width: 45vh;
+        height: 55vh;
+    }
+    .main-menu svg{
+        margin-top: 10%;
+    }
+    .clock svg{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 768px){
+    body{
+        background-color: black;
+        font-size: 70%;
+    }
+    
+    #koko-kos{
+        margin-top: 6%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    
+    #fadhilee {
+        margin-top: -1%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    #live{
+        font-size: 270%;
+        margin-top: 8%;
+    }
+    .navigation{
+        font-size: 100%;
+        width: 63%;
+        margin-top: 7%;
+        margin-left: -14%;
+    }
+    .navigation #reservation{
+        height: 1%;
+        margin-top: 0.2%;
+    }
+    .navigation a{
+        margin-top: 2.2%;
+    }
+    #ach13ng{
+        margin-top: -1%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    .main-menu svg{
+        margin-top: 30%;
+    }
+    .clock svg{
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    body{
+        background-color: black;
+        font-size: 70%;
+    }
+    
+    #koko-kos{
+        margin-top: 6%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    
+    #fadhilee {
+        margin-top: -1%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    #live{
+        font-size: 270%;
+        margin-top: 8%;
+    }
+    .navigation{
+        font-size: 140%;
+        width: 63%;
+        margin-top: 7%;
+        margin-left: -14%;
+    }
+    .navigation #reservation{
+        height: 1%;
+        margin-top: 0.2%;
+    }
+    .navigation a{
+        margin-top: 2.2%;
+    }
+    #ach13ng{
+        margin-top: -1%;
+        width: 98.5vw;
+        height: 70vh;
+    }
+    .main-menu svg{
+        margin-top: 55%;
+    }
+    .clock svg{
+        margin-top: 55%;
+    }
+}

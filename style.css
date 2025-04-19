@@ -1,0 +1,1319 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: jmh;
+    src: url(fonts/JMH\ Typewriter.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: jmh;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    animation: fade 25s infinite ease-in-out;
+}
+
+.slide:nth-child(1) {
+    background-image: url(images/background\ image\ 1.jpg);
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
+    background-repeat: no-repeat;
+    width: 200vh;
+    height: 100vh;
+    animation-delay: 5s;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background-image: url(images/experience.jpg);
+    animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+    background-image: url(images/taste.jpg);
+    animation-delay: 15s;
+}
+
+.slide:nth-child(5) {
+    background-image: url(images/savour.jpg);
+    animation-delay: 20s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.text {
+    margin-top: 27%;
+    margin-left: 39%;
+    justify-content: center;
+    color: rgb(99, 91, 91);
+    font-size: 800%;
+    padding: 10px;
+}
+
+.ankole-logo {
+    position: fixed;
+    margin-top: -43%;
+    margin-left: 47%;
+}
+
+.ankole-logo img {
+    width: 50%;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    border: 1px solid rgb(49, 42, 42);
+    width: 35%;
+    padding: 1.2% 2.5%;
+    border-radius: 100px;
+    background-color: rgb(49, 42, 42);
+    margin-left: 29%;
+    margin-top: -7%;
+    z-index: 2;
+    gap: 3%;
+}
+.navigation a:hover{
+    color: darkgray;
+}
+.navigation a {
+    font-family: poppins;
+    margin-top: 1%;
+    text-decoration: none;
+    color: white;
+
+}
+.main-menu svg{
+    margin-top: 20%;
+}
+.clock svg{
+    margin-top: 20%;
+}
+.navigation #reservation {
+    border: 1px solid rgb(97, 90, 90);
+    border-radius: 100px;
+    background-color: rgb(97, 90, 90);
+    padding: 2% 3.5%;
+    margin-top: -0.5%;
+}
+
+.navigation #reservation:hover {
+    color: black;
+    background-color: white;
+}
+
+.clock {
+    position: relative;
+    display: inline-block;
+}
+
+.clock-dropdown {
+    font-family: poppins;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 770%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 26px;
+    border-radius: 15px;
+    top: -490%;
+    left: -33%;
+    z-index: 1;
+
+}
+.clock-dropdown p{
+    display: block;
+}
+.clock-dropdown h4{
+    display: block;
+}
+.clock:hover .clock-dropdown {
+    display: block;
+}
+
+.main-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.main-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(17, 14, 14);
+    width: 770%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 15px 16px;
+    top: -575%;
+    left: -43%;
+    z-index: 1;
+    border-radius: 10px;
+}
+.main-dropdown a{
+    display: block;
+    line-height: 55%;
+    border-bottom: 1px solid gray;
+}
+.main-dropdown a:hover{
+    color: darkgray;
+}
+.main-menu:hover .main-dropdown {
+    display: block;
+}
+hr {
+    color: rgb(97, 90, 90);
+    margin-top: -2%;
+
+}
+
+.socials{
+    position: relative;
+    margin-top: -47%;
+    gap: 5%;
+    margin-left: 60%;
+ }
+ #instagram{
+    position: relative;
+    overflow: visible;
+   top: 100%;
+    left: 80%;
+    border: solid rgb(151, 147, 147) 0.5px;
+    padding: 0.5%;
+    border-radius: 50px;
+ }
+ #facebook{
+    position: relative;
+    overflow: visible;
+    top: 100%;
+    left: 80%;
+    border: solid rgb(151, 147, 147) 0.5px;
+    padding: 0.5%;
+    border-radius: 50px;
+ }
+.fa-whatsapp {
+    position: absolute;
+    position: fixed;
+    margin-left: 93%;
+    margin-top: 38%;
+    color: rgb(255, 255, 255);
+    font-size: 240%;
+    text-decoration: none;
+    background-color: rgb(17, 17, 17);
+    border-radius: 100px;
+    padding: 0.5%;
+    z-index: 1;
+}
+
+.branches {
+    display: flex;
+}
+
+.branches img {
+    position: relative;
+    z-index: -1;
+}
+
+.branches h4 {
+    color: rgb(247, 97, 11);
+}
+
+.branches p {
+    font-size: 60%;
+}
+
+.branches a {
+    text-decoration: none;
+    color: white;
+}
+
+.kitisuru img {
+    width: 87.5%;
+    height: 99.3vh;
+    filter: brightness(0.6);
+}
+
+.kilimani img {
+    width: 118%;
+    height: 99.3vh;
+    margin-left: -18%;
+    filter: brightness(0.6);
+
+}
+
+.kitisuru-txt {
+    position: absolute;
+    top: 40%;
+    color: white;
+    z-index: 1;
+    left: 18%;
+    text-align: center;
+    font-size: 180%;
+}
+
+.kilimani-txt {
+    font-size: 180%;
+    position: absolute;
+
+    top: 40%;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    left: 72%;
+
+}
+
+.kitisuru-menu {
+    display: flex;
+}
+
+.left-kitisuru img {
+    overflow: hidden;
+    width: 50vw;
+    height: 100vh;
+    filter: brightness(0.6);
+
+}
+
+.left-text {
+    position: relative;
+    z-index: 1;
+    margin-top: -65%;
+    color: white;
+    text-align: center;
+    font-size: 170%;
+}
+
+.left-text h2 {
+    font-family: poppins;
+    margin-top: 1%;
+    color: rgb(218, 121, 11);
+    font-size: 200%;
+    transition: 1s ease-in-out;
+    animation: infinite 2s;
+}
+
+
+.navigation-kitisuru {
+    position: fixed;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    width: 35%;
+    padding: 1.2% 2.5%;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 4%;
+    margin-top: 12%;
+    z-index: 2;
+    gap: 3%;
+}
+
+.navigation-kitisuru a {
+    margin-top: 1.1%;
+    text-decoration: none;
+    color: white;
+
+}
+
+.navigation-kitisuru #reservation {
+    border: 1px solid rgb(97, 90, 90);
+    border-radius: 100px;
+    background-color: rgb(97, 90, 90);
+    padding: 2% 3.5%;
+    margin-top: -0.3%;
+}
+
+.navigation-kitisuru #reservation:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.menu-list {
+    overflow-y: scroll;
+    height: 91.8vh;
+    padding: 2%;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list a:hover {
+    color: orange;
+}
+
+nav {
+    position: fixed;
+    left: 80%;
+    top: 1%;
+    right: 0%;
+    background-color: black;
+    display: flex;
+    margin-bottom: 10%;
+    gap: 7%;
+}
+
+nav:hover {
+    color: orange;
+}
+
+div h2 {
+    color: orange;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.schedule h3 {
+    color: darkorange;
+    font-family: poppins;
+}
+
+.breakfast-list span {
+    margin-left: 90%;
+    margin-top: -5%;
+}
+
+.breakfast-list {
+    margin-bottom: 8%;
+}
+
+.ankole-breakfast {
+    margin-top: 3%;
+}
+
+#ankole-logos {
+    height: 80px;
+    width: 100px;
+}
+
+.breakfast-txt {
+    line-height: 1.5;
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.breakfast-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.ankole-big {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    width: 80%;
+}
+
+.extras {
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+
+.extras h3 {
+    color: orange;
+}
+
+.extras span {
+    margin-left: 90%;
+}
+
+.african-soup {
+    display: flex;
+    gap: 52%;
+}
+
+.cream-mbuzi {
+    display: flex;
+    gap: 49%;
+}
+
+.foods h4 {
+    color: orange;
+}
+
+.all {
+    width: 100vw;
+    background-color: black;
+}
+
+.body {
+    background-color: black;
+}
+
+#reviews-ankole-logo {
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.review-Slides {
+    display: none;
+}
+
+.reviews-container {
+    position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 40%;
+    background-color: black;
+    color: white;
+    height: 55vh;
+    margin-top: 5%;
+    font-family: jmh;
+}
+
+.review-content {
+    font-size: 1.2rem;
+    padding: 20px;
+    width: 65%;
+    margin-left: 15%;
+
+}
+
+.review-author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.review-location {
+    font-style: italic;
+    color: gray;
+}
+
+.navigation-button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.w3-display-left {
+    left: 0;
+}
+
+.w3-display-right {
+    right: 0;
+}
+
+.navigation-button:hover {
+    background-color: rgb(24, 22, 22);
+}
+
+.quote-icons {
+    font-size: 24px;
+    color: orange;
+}
+
+.fa-quote-left {
+    margin-left: -55%;
+}
+
+.fa-quote-right {
+    margin-left: 55%;
+}
+
+.contacts-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/contact.webp');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.contacts-page a{
+    text-decoration: none;
+    color: white;
+}
+.kitisuru-contact {
+    font-family: poppins;
+    font-size: 110%;
+    border: 1px solid white;
+    color: white;
+    padding: 2%;
+    height: 20vh;
+    margin: 18% 28%;
+}
+
+.kilimani-contact {
+    font-family: poppins;
+    font-size: 110%;
+    border: 1px solid white;
+    color: white;
+    margin: 18% -20%;
+    padding: 2%;
+    width: 20%;
+    height: 25vh;
+
+}
+.events-page {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.events-page img {
+    position: relative;
+    height: 100vh;
+    width: 35vw;
+    filter: brightness(0.5);
+    position: relative;
+    z-index: -1;
+}
+
+.event-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 60%;
+    top: -65%;
+    color: white;
+    font-size: 85%;
+    left: 10%;
+}
+
+.event-text span {
+    color: rgb(197, 157, 83);
+}
+
+.event-text h2 {
+    font-size: 290%;
+    color: white;
+}
+
+#pavilion {
+    color: darkgray;
+}
+
+.reservation-page {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.left-reservation #karibu {
+    position: relative;
+    width: 55vw;
+    height: 156.4vh;
+    z-index: -1;
+    margin-top: -51%;
+    filter: brightness(0.5);
+}
+
+.left-reservation #logo-reserv {
+    position: absolute;
+    width: 10%;
+    margin: 5% 23%;
+    z-index: 1;
+}
+
+#karibu {
+    font-size: 170%;
+    z-index: 1;
+    margin-top: -15%;
+    color: white;
+    text-align: center;
+}
+
+.left-reservation h1 {
+    color: orangered;
+}
+.form{
+    background-color: black;
+}
+form {
+
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 5px 5px 15px rgba(114, 112, 112, 0.2);
+    height: 100vh;
+    width: 42vw;
+    padding: 4%;
+    color: white;
+}
+
+form input {
+    color-scheme: dark;
+    border: 1px solid rgb(88, 83, 83);
+    padding: 2%;
+    width: 85%;
+}
+form input[type = "text"]:focus{
+    border: 1px solid green;
+}
+form button {
+    font-family: poppins;
+    font-size: 120%;
+    padding: 2% 40.2%;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+}
+form input:focus{
+    outline: 1px solid green;
+}
+
+form button:hover {
+    background-color: rgb(192, 157, 111);
+    color: white;
+}
+
+form select {
+    padding: 2%;
+    width: 89.5%;
+    background-color: black;
+}
+form select:hover{
+    border: 1px solid green;
+}
+#whatsapp-reserv{
+    position: fixed;
+    z-index: 1;
+    margin-top: -7%;
+}
+
+
+
+@media only screen and (max-width: 430px) {
+    .slideshow-container {
+        height: 100vh;
+    }
+
+    .slide {
+        background-size: contain;
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .slide img {
+        height: 100%;
+
+    }
+
+    .slide:nth-child(1) {
+      background-size: 100vw 100vh;
+    }
+
+    .slide:nth-child(2) {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+
+    }
+
+    .slide:nth-child(3) {
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(4){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(5){
+        background-size: 100vw 100vh;
+    }
+
+    .text {
+        font-size: 350%;
+        margin-left: 15%;
+        margin-top: 80%;
+    }
+
+    .navigation {
+        position: fixed;
+        width: 81%;
+        padding: 2% 4%;
+        font-size: 50%;
+        top: 15%;
+        left: -25%;
+        top: 95%;
+
+    }
+    .branches {
+        flex-direction: column;
+    }
+
+    .kitisuru img {
+        width: 100vw;
+        height: 55vh;
+    }
+
+    .kilimani img {
+        margin-top: -1.5%;
+        width: 118vw;
+        height: 55vh;
+    }
+
+    .kitisuru-txt {
+        top: 23%;
+        left: 25%;
+    }
+
+    .kilimani-txt {
+        left: 25%;
+        top: 65%;
+    }
+
+    .ankole-logo {
+        position: relative;
+        margin-top: -215%;
+        z-index: 1;
+        left: -11%;
+    }
+
+    .ankole-logo img {
+        margin-top: 1%;
+    }
+
+    .kitisuru-menu {
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-kitisuru img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .navigation-kitisuru {
+        position: relative;
+        font-size: 50%;
+        width: 90%;
+
+    }
+    .schedule h2{
+        margin-top: 19%;
+    }
+    nav {
+        position: fixed;
+        margin: 125.5% -79%
+    }
+
+    .menu-list {
+        margin-top: -3%;
+        width: 96vw;
+    }
+
+    .breakfast-list span {
+        margin-left: 80%;
+        margin-top: -5%;
+    }
+
+    .extras span {
+        margin-left: 80%;
+    }
+
+    .reviews-container {
+        margin-top: 50%;
+        width: 95vw;
+        margin-bottom: 10%;
+    }
+
+    .review-content {
+        font-size: 75%;
+    }
+
+    .events-page {
+        flex-direction: column;
+        gap: -10%;
+        overflow: scroll;
+    }
+
+    .events-page img {
+        width: 100vw;
+    }
+
+    #nairobi {
+        margin-top: -55.5%;
+        margin-bottom: -55%;
+    }
+
+    .contacts-page {
+        flex-direction: column;
+    }
+
+    .kitisuru-contact {
+        width: 65vw;
+        margin-left: 10%;
+        margin-top: 35%;
+        height: 25vh;
+    }
+
+    .kilimani-contact {
+        margin-left: 10%;
+        margin-top: -5%;
+        width: 65vw;
+        height: 30vh;
+    }
+
+    .reservation-page{
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .left-reservation #karibu{
+        width: 99.5vw;
+        height: 95vh;
+    }
+    form{
+        width: 91vw;
+        height: 80vh;
+        margin-top: -167%;
+    }
+    form button{
+        padding: 2% 33%;
+    }
+    .navigation #reservation{
+        padding: 1% 3%;
+        margin-top: 0.1%;
+    }
+    .socials{
+        position: relative;
+        z-index: 1;
+        margin-left: -9%;
+        margin-top: -175%;
+    }
+    .fa-whatsapp{
+        position: relative;
+        margin-left: 85%;
+        margin-top: 320%;
+    }
+    #whatsapp-reserv{ 
+        position: fixed;
+        margin-top: -40%;
+    }
+    #menu-whatsapp{
+        position: fixed;
+        top: -65%;
+    }
+
+}
+
+@media only screen and (min-width: 431px) and (max-width: 768px) {
+    .slide:nth-child(1){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(2){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(3){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(4){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(5){
+        background-size: 100vw 100vh;
+    }
+    .text {
+        font-size: 600%;
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+
+    .kitisuru-contact {
+        margin-left: 2%;
+    }
+
+    .kilimani-contact {
+        width: 40vw;
+    }
+
+    .navigation {
+        position: fixed;
+        margin-left: 3%;
+        font-size: 110%;
+        margin-top: -25%;
+        width: 91%;
+        padding: 1% 2%;
+    }
+
+    .reservation-page{
+        overflow: scroll;
+        flex-direction: column;
+    }
+    .left-reservation #karibu{
+        width: 99.5vw;
+        height: 140vh;
+    }
+    form{
+        margin-top: -137%;
+        width: 91.2vw;
+        height: 100vh;
+    }
+    .left-reservation #logo-reserv{
+        position: relative;
+        margin-left: 45%;
+    }
+    .navigation #reservation{
+        padding: 1% 3%;
+        margin-top: 0.1%;
+    }
+    .reviews-container{
+        width: 98vw;
+    }
+    .branches {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .kitisuru img {
+        width: 100vw;
+        height: 55vh;
+    }
+
+    .kilimani img {
+        margin-top: -1.5%;
+        width: 118vw;
+        height: 55vh;
+    }
+
+    .kitisuru-txt {
+        top: 15%;
+        left: 35%;
+    }
+
+    .kilimani-txt {
+        left: 35%;
+        top: 60%;
+    }
+    .ankole-logo img {
+        position: fixed;
+        margin-top: -60%;
+        width: 20%;
+        margin-left: -7%;
+        
+    }
+
+    .kitisuru-menu {
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-kitisuru img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .navigation-kitisuru {
+        position: relative;
+        font-size: 80%;
+        margin-top: 37%;
+        margin-left: 9%;
+        width: 70%;
+    }
+
+    nav {
+        position: fixed;
+        top: 45%;
+        margin: 19.5% -79%
+    }
+
+    .menu-list {
+        margin-top: -3%;
+        width: 96vw;
+    }
+
+    .breakfast-list span {
+        margin-left: 60%;
+        margin-top: -5%;
+    }
+
+    .extras span {
+        margin-left: 90%;
+    }
+    .socials{
+        position: relative;
+        z-index: 1;
+        left:-5%;
+        margin-top: -90%;
+    }
+    .fa-whatsapp{
+        position: fixed;
+        z-index: 1;
+        left: -5%;
+        margin-top: 298%;
+    }
+
+    .kilimani-contact{
+        margin-top: 55%;
+    }
+    .kitisuru-contact{
+        margin-top: 55%;
+    }
+    #contact-logo{
+        margin-top: -85%;
+    }
+    #contact-socials{
+        margin-top: -130%;
+    }
+    #contact-navigation{
+        margin-top: -15%;
+    }
+    #reservation-nav{
+        margin-top: -20%;
+    }
+    #whatsapp-reserv{
+        margin-top: -30%;    
+    }
+    #price{
+        margin-left: 90%  ;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .slide:nth-child(1){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(2){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(3){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(4){
+        background-size: 100vw 100vh;
+    }
+    .slide:nth-child(5){
+        background-size: 100vw 100vh;
+    }
+    .text {
+        font-size: 600%;
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    .text {
+        font-size: 600%;
+        bottom: 10px;
+        margin-top: 30%;
+    }
+
+    .navigation {
+        position: fixed;
+        margin-left: 10%;
+        font-size: 110%;
+        margin-top: 60%;
+        width: 68%;
+        padding: 1% 2%;
+    }
+
+    .ankole-logo {
+        margin-top: -85%;
+    }
+
+    .kitisuru-contact {
+        margin-left: 7%;
+    }
+
+    .kilimani-contact {
+        width: 40vw;
+    }
+    .reservation-page{
+        flex-direction: column;
+        height: 80%;
+    }
+    .left-reservation #karibu{
+        overflow: hidden;
+        width: 97vw;
+        height: 135vh;
+    }
+    form{
+        margin-top: -139%;
+        height: 100vh;
+        width: 89vw;
+        margin-top: -145%;
+    }
+    .left-reservation #logo-reserv{
+        position: relative;
+        margin-left: 45%;
+    }
+
+    .navigation #reservation{
+        padding: 1% 3%;
+        margin-top: 0.1%;
+    }
+    .reviews-container{
+        width: 98vw;
+    }
+    .review-content{
+        font-size: 160%;
+    }
+    .branches {
+        flex-direction: column;
+        
+    }
+    .kitisuru img {
+        width: 98.5vw;
+        height: 55vh;
+    }
+    .kilimani img {
+        margin-top: -1.5%;
+        width: 116vw;
+        height: 55vh;
+    }
+
+    .kitisuru-txt {
+        top: 15%;
+        left: 35%;
+    }
+
+    .kilimani-txt {
+        left: 35%;
+        top: 60%;
+    }
+
+    .ankole-logo {
+        position: relative;
+    }
+
+    .ankole-logo img {
+        display: none;
+    }
+
+    .kitisuru-menu {
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-kitisuru img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .navigation-kitisuru {
+        position: relative;
+        font-size: 90%;
+        margin-top: 40%;
+        width: 60%;
+        margin-left: 10%;
+
+    }
+
+    nav {
+        position: fixed;
+        margin: 79.5% -79%;
+    }
+
+    .menu-list {
+        margin-top: -3%;
+        width: 97.5vw;
+        overflow-x: hidden;
+    }
+    .schedule h2{
+        margin-top: 12%;
+    }
+
+    .breakfast-list span {
+        margin-left: 80%;
+        margin-top: -5%;
+    }
+    #toast{
+        margin-left: 84%;
+    }
+    .extras span {
+        margin-left: 90%;
+    }
+    .socials{
+        position: relative;
+        z-index: 1;
+        left:-5%;
+        margin-top: -125%;
+    }
+    .fa-whatsapp{
+        position: fixed;
+        z-index: 1;
+        left: -5%;
+        margin-top: -168%;
+    }
+    .kilimani-contact{
+        margin-top: 55%;
+    }
+    .kitisuru-contact{
+        margin-top: 55%;
+    }
+    #contact-logo{
+        z-index: 1;
+        margin-top: -85%;
+    }
+    #contact-socials{
+        margin-top: -130%;
+    }
+    #contact-navigation{
+        margin-top: -15%;
+    }
+    #reservation-nav{
+        position: fixed;
+        margin-top: -165%;
+    }
+    #price{
+        margin-left: 89%  ;
+    }
+    #reviews-nav{
+        position: fixed;
+        z-index: 10;
+        font-size: 90%;
+        margin-top: 25%;
+        width: 60%;
+        margin-left: 10%;
+    }
+}

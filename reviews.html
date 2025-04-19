@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Slideshow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Ankole_image.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bbdf563758.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <div class="all"></div>
+       <a href="index.html"> <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                        alt="" id="reviews-ankole-logo"></a>
+    <div class="reviews-container">
+        <div class="review-Slides">
+            <h2>Reviews</h2>
+            <i class="fa-solid fa-quote-left quote-icons"></i>
+            <p class="review-content">Honestly, it's one of the best places I've ever been to. The staff are so lovely
+                and friendly. They handled everything with the utmost respect and perfection.</p>
+            <p class="review-author">Winfresha Makokha</p>
+            <p class="review-location">KITISURU</p>
+            <i class="fa-solid fa-quote-right quote-icons"></i>
+        </div>
+        <div class="review-Slides">
+            <h2>Reviews</h2>
+            <i class="fa-solid fa-quote-left quote-icons"></i>
+            <p class="review-content">Best place to eat out. Beautiful place, ambiance is top-notch, swift and friendly
+                staff. I was really impressed.</p>
+            <p class="review-author">Molly Nalwadda</p>
+            <p class="review-location">KITISURU</p>
+            <i class="fa-solid fa-quote-right quote-icons"></i>
+        </div>
+        <div class="review-Slides">
+            <h2>Reviews</h2>
+            <i class="fa-solid fa-quote-left quote-icons"></i>
+            <p class="review-content">This place is a stunner! Went here as a group of 12 people. The ambiance,
+                architectural layout, food, drinks, service, lighting - everything was top-notch!</p>
+            <p class="review-author">Sarah Karuri</p>
+            <p class="review-location">KITISURU</p>
+            <i class="fa-solid fa-quote-right quote-icons"></i>
+        </div>
+        <button class="navigation-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="navigation-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var slides = document.getElementsByClassName("review-Slides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+        <div class="navigation" id="reviews-nav">
+            <div class="main-menu">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-align-justify-icon lucide-align-justify">
+                        <path d="M3 12h18" />
+                        <path d="M3 18h18" />
+                        <path d="M3 6h18" />
+                    </svg></a>
+                    <div class="main-dropdown">
+                        <a href="index.html">Home</a> <br>
+                        <a href="menu.html">Menu</a> <br>
+                        <a href="reviews.html">Reviews</a> <br>
+                        <a href="events.html">Events</a><br>
+                        <a href="live.html">Live</a><br>
+                        <a href="contacts.html">Contacts</a><br>
+                    </div>
+            </div>
+            <div class="clock">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-alarm-clock-icon lucide-alarm-clock">
+                    <circle cx="12" cy="13" r="8" />
+                    <path d="M12 9v4l2 2" />
+                    <path d="M5 3 2 6" />
+                    <path d="m22 6-3-3" />
+                    <path d="M6.38 18.7 4 21" />
+                    <path d="M17.64 18.67 20 21" />
+                </svg></a>
+                <div class="clock-dropdown">
+                    <p>Opening Hours</p>
+                    <h4>Kitisuru</h4>
+                    <p>Mon - Sun <br>9.00am - 11.00pm</p>
+                    <h4>Kilimani</h4>
+                    <p>Mon - Sun <br>7.30am - 11.00pm</p>
+                </div>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="events.html">Events</a>
+            <a href="live.html">Live</a>
+            <a href="contacts.html">Contacts</a>
+            <a id="reservation" href="reservation.html">Reservation</a>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/ankolegrill/"><svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                stroke="rgb(151, 147, 147)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg></a>
+            <a href="https://www.facebook.com/ankolegrill"><svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                stroke="rgb(151, 147, 147)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+        </div>
+        <div class="whatsapp">
+            <a class="fa-brands fa-whatsapp" href="https://www.facebook.com/ankolerealitytv/posts/join-our-whatsapp-group-httpschatwhatsappcomjztjazja7xs33uvkewk4b1/316441933378390/"></a>
+        </div>
+</body>
+</html>

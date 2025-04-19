@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitisuru Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Ankole_image.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="kitisuru-menu">
+        <div class="left-kitisuru">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+            <div class="left-text">
+                <p>Menu</p>
+                <h2>Kitisuru</h2>
+            </div>
+
+            <div class="navigation-kitisuru">
+                <div class="main-menu">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-align-justify-icon lucide-align-justify">
+                            <path d="M3 12h18" />
+                            <path d="M3 18h18" />
+                            <path d="M3 6h18" />
+                        </svg></a>
+                    <div class="main-dropdown">
+                        <a href="index.html">Home</a> <br>
+                        <a href="menu.html">Menu</a> <br>
+                        <a href="reviews.html">Reviews</a> <br>
+                        <a href="events.html">Events</a><br>
+                        <a href="live.html">Live</a><br>
+                        <a href="contacts.html">Contacts</a><br>
+                    </div>
+                </div>
+                <div class="clock">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-alarm-clock-icon lucide-alarm-clock">
+                            <circle cx="12" cy="13" r="8" />
+                            <path d="M12 9v4l2 2" />
+                            <path d="M5 3 2 6" />
+                            <path d="m22 6-3-3" />
+                            <path d="M6.38 18.7 4 21" />
+                            <path d="M17.64 18.67 20 21" />
+                        </svg></a>
+                    <div class="clock-dropdown">
+
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="events.html">Events</a>
+                <a href="live.html">Live</a>
+                <a href="contacts.html">Contacts</a>
+                <a id="reservation" href="reservation.html">Reservation</a>
+            </div>
+
+        </div>
+        <div class="menu-list">
+            <nav>
+                <a href="#all-breakfast">Breakfast</a>
+                <a href="#food">Food</a>
+                <a href="#drinks">Drinks</a>
+            </nav>
+            <div class="schedule" id="all-breakfast">
+                <h2> Breakfast</h2> <br>
+                <p>Kilimani-breakfast is served from 7.30am to 11.00am daily</p>
+                <p>Kitisuru - breakfast is served from 9.00am to 11.00am daily</p><br>
+                <h3><b>COFFEE . TEA . CHOCOLATE</b></h3> <br>
+            </div>
+            <div class="breakfast-list">
+                <p>Freshly Brewed Coffee <span id="price">Kshs 250</span> </p>
+                <p>Espresso <span id="price">Kshs 250</span> </p>
+                <p>Cappuccino <span id="price">Kshs 350</span> </p>
+                <p>Latte <span id="toast" id="price">Kshs 390</span></p>
+                <p>Mocha <span id="toast" id="price">Kshs 400</span></p>
+                <p>Macchiato <span id="price">Kshs 350</span></p>
+                <p>Kenyan Tea <span id="price">Kshs 250</span></p>
+                <p>Homemade Ginger Chai Masala <span id="price">Kshs 300</span></p>
+                <p>Fresh Mint Tea <span id="price">Kshs 300</span></p>
+                <p>Green Tea <span id="price">Kshs 300</span></p>
+                <p>Hot Chocolate <span id="price">Kshs 350</span></p>
+                <p>Cinnamon Ginger Lemon Honey <span id="price">Kshs 350</span></p>
+                <p>Iced Tea <span id="price">Kshs 250</span></p>
+                <p>Iced Chai Masala <span id="price">Kshs 300</span></p>
+                <p>Strawberry Lemon Iced Tea <span id="price">Kshs 300</span></p>
+                <p>Hibiscus Honey Lemon <span id="price">Kshs 350</span></p>
+                <p>Iced Coffee <span id="price">Kshs 250</span></p>
+                <p>Espresso <span id="price">Kshs 250</span></p>
+            </div>
+
+            <div class="ankole-logo-breakfast">
+                <div class="breakfast-menu">
+                    <div class="ankole-big">
+                        <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                            id="ankole-logos">
+                        <div class="breakfast-detail">
+                            <h3>ANKOLE BIG BREAKFAST </h3>
+                            <p>2 eggs, 150gms grilled fillet steak, toast, hash browns, grilled tomato, <br> BBQ baked
+                                beans
+                            </p>
+                        </div>
+                    </div>
+                    <p>ksh 1500</p>
+                </div>
+
+                <div class="breakfast-menu">
+                    <div class="ankole-big">
+                        <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                            alt="" id="ankole-logos">
+                        <div class="breakfast-txt">
+                            <h3>HASH BROWNS, EGGS AND TOAST </h3>
+                            <p>with bacon or sausage</p>
+                        </div>
+                    </div>
+                    <p>ksh 1500</p>
+                </div>
+
+                <div class="breakfast-menu">
+                    <div class="ankole-big">
+                        <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                            alt="" id="ankole-logos">
+                        <div class="breakfast-txt">
+                            <h3>RANCH BREAKFAST </h3>
+                            <p>2 eggs, tortilla, pulled pork, ranchero sauce, bacon, melted gouda, <br> avocado,
+                                kachumbari
+                            </p>
+                        </div>
+                    </div>
+                    <p>Kshs 1350</p>
+                </div>
+
+                <div class="breakfast-menu">
+                    <div class="ankole-big">
+                    <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                        alt="" id="ankole-logos">
+                    <div class="breakfast-txt">
+                        <h3>CRÊPE </h3>
+                        <p>served with wild honey, whipped <br> cream and a side of fruit salad</p>
+                    </div>
+                </div>
+                <p>Kshs 750</p>
+            </div>
+            <div class="breakfast-menu">
+                <div class="ankole-big">
+                <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="" id="ankole-logos">
+                <div class="toasted-txt">
+                    <h3>TOASTED BACON AVOCADO BREAKFAST SANDWICH </h3>
+                    <p>2 eggs, cheese, bacon, avocado, red pepper</p>
+                </div>
+            </div>
+            <p>Kshs 820</p>
+            </div>
+            <div class="breakfast-menu">
+                <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>PEANUT BUTTER SWEET POTATO UJI </h3>
+                </div>
+            </div>
+            <p>Kshs 550</p>
+            </div>
+        </div>
+
+        <div class="extras">
+            <h3>EXTRAS</h3> <br>
+            <p>Sliced Avocado: <span>Kshs 120</span></p>
+            <p>One Egg: <span>Kshs 120</span></p>
+            <p>Toast: <span id="toast">Kshs 120</span></p>
+            <p>Hash Browns: <span>Kshs 180</span></p>
+            <p>BQ Baked Beans: <span>Kshs 180</span></p>
+            <p>Extra Cheese: <span>Kshs 180</span></p>
+            <p>Two Sausages: <span>Kshs 250</span></p>
+            <p>Bacon: <span id="toast">Kshs 250</span></p>
+        </div>
+
+        <div class="foods" id="food">
+            <h2>Food</h2> <br>
+            <h4>SOUPS</h4> <br>
+            <div class="african-soup">
+                <p>SPICY WEST AFRICAN MBUZI SOUP</p>
+                <p>Cup: Kshs 480 <br>
+                    Bowl: Kshs 720</p>
+            </div>
+
+            <div class="cream-mbuzi">
+                <p>SPICY MUSHROOM CREAM MBUZI SOUP</p>
+                <p>Cup: Kshs 580 <br>
+                    Bowl: Kshs 880</p>
+            </div>
+        </div>
+
+<div><h2>SALADS</h2></div>
+        <div class="breakfast-menu">
+            <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>THAI BEEF SALAD</h3>
+                    <p>grilled beef strips, cucumber, cherry tomato, scallions mint, dhania, crushed peanuts</p>
+                </div>
+            </div>
+            <p><span>Kshs 2200</span></p>
+        </div>
+        <div class="breakfast-menu">
+            <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>KEEN-WA SALAD</h3>
+                    <p>quinoa, feta, red pepper, Kalamata olives, red onions, cucumber, basil, mint, chick peas, parsley</p>
+                </div>
+            </div>
+            <p><span>Kshs 1500</span></p>
+        </div>
+        <div class="breakfast-menu">
+            <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>CHICKEN BACON CAESAR SALAD</h3>
+                    <p>chicken, bacon, parmesan, romaine, croutons, garlic caesar dressing</p>
+                </div>
+            </div>
+            <p><span>Kshs 2200</span></p>
+        </div>
+        <div class="breakfast-menu">
+            <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>GREEK SALAD</h3>
+                    <p>vine tomatoes, cucumber, red onion, Kalamata olives, feta cheese, olive oil, lemon</p>
+                </div>
+            </div>
+            <p><span>Kshs 1500</span></p>
+        </div>
+        <div class="breakfast-menu">
+            <div class="ankole-big">
+                <img id="ankole-logos"
+                    src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg"
+                    alt="">
+                <div class="peanut-txt">
+                    <h3>COBB SALAD</h3>
+                    <p>chicken, bacon, gouda, egg, avocado, cherry tomato</p>
+                </div>
+            </div>
+            <p><span>Kshs 1700</span></p>
+        </div>
+        <div id="drinks"><h2>DRINKS</h2></div>
+        <div class="extras">
+            <h3>FRESH JUICES</h3> <br>
+            <p>Mango: <span id="toast">Kshs 700</span></p>
+            <p>Pineapple: <span>Kshs 700</span></p>
+            <p>Tree Tomato: <span>Kshs 700</span></p>
+            <p>Passion: <span>Kshs 700</span></p>
+            <p>Sugarcane: <span>Kshs 700</span></p>
+            <p>Orange: <span>Kshs 900</span></p>
+            <p>Fruit Cocktail: <span>Kshs 700</span></p>
+        </div>
+        <div class="extras">
+            <h3>FRESH JUICE COCKTAILS</h3> <br>
+            <p>Cherry Coconut Pineapple: <span>Kshs 750</span></p>
+            <p>Strawberry Watermelon Ginger: <span>Kshs 750</span></p>
+            <p>Strawberry Lemonade: <span>Kshs 750</span></p>
+            <p>Pineapple Mint: <span>Kshs 750</span></p>
+            <p>Sugarcane Ginger Lime: <span>Kshs 750</span></p>
+        </div>
+        <div class="extras">
+            <h3>MILKSHAKES</h3> <br>
+            <p>Cherry Choc Chip Cookie: <span>Kshs 700</span></p>
+            <p>Vanilla: <span>Kshs price missing</span></p>
+            <p>Chocolate Fudge: <span>Kshs price missing</span></p>
+            <p>Strawberry: <span>Kshs 700</span></p>
+            <p>Chocolate Chip Cookie: <span>Kshs 700</span></p>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
